@@ -1,5 +1,5 @@
 # COVID-OpenConnect
-Track of Open connection around you using bluetooth.
+Track of Open connection around you using Bluetooth.
 
 ## Background
 In view of COVID-19 out-break, thought to have an app that keep track of the unique mobile devices that are in the near field of less than 10mts.
@@ -17,13 +17,9 @@ If member(A) of this app is tested with COVID +ve; he / his close member submit 
 
 ## Blue Print
 - Community member has to install the app on their mobile and grant permission for app to control Bluetooth.
-- App register to server with unique id and some additional details
-  - Android / IOs Device ID
-  - IMEI (optional)
-  - SIM SubscriberID
-  - WI-FI MAC Address
-  - Bluetooh DeviceID
-- Member who staying at one home has to set other devices in their family to group and those will be filtered from the tracking.
+- App register with unique id based on the mobile hardware information hashed. With this re-installing the app will registered with same unique id keeping your history for desired period of time.
+  - To generate Unique ID per device have to use hardware information like (IMEI and MAC Address) 
+- Members who staying with other community users in the same house has to update other devices as their family / closed group. With this app will filter from the tracking to save energy.
 - Member has to update home location(optional), so app can automatically on its track when you away from your home.
 - App will scan near by devices and stores the information that you are open connected in a day.
 - Any community user who tested +ve has to inform in the app and all the open connected devices in last 20days will be get notified. This app is not sharing your personal information and it just alerts with your unique registered ID.
